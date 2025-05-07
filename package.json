@@ -1,12 +1,25 @@
 {
-  "name": "TypeScript-Class",
+  "name": "typescript-class",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "test": "vitest",
+    "tsgo": "/Users/Ojoxux/develop/TypeScript/typescript-go/built/local/tsgo"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.15.14",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
 }
